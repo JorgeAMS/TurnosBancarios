@@ -28,3 +28,4 @@ C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\Wi
 C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
 C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.VerTurnos.resources

@@ -16,9 +16,6 @@ namespace WindowsFormsApplication2
         public Form1()
         {
             InitializeComponent();
-            //bttn_NoCliente.BackColor = System.Drawing.Color.Transparent;
-            //int hg = this.Height;
-            //int wd = this.Width;
             int hg = Screen.PrimaryScreen.Bounds.Height;
             int wd = Screen.PrimaryScreen.Bounds.Width;
             
