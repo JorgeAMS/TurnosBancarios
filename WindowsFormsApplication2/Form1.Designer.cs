@@ -37,7 +37,7 @@
             // bttn_Cliente
             // 
             this.bttn_Cliente.BackColor = System.Drawing.Color.Transparent;
-            this.bttn_Cliente.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bttn_Cliente.BackgroundImage")));
+            this.bttn_Cliente.BackgroundImage = global::WindowsFormsApplication2.Properties.Resources.Cliente5;
             this.bttn_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.bttn_Cliente.FlatAppearance.BorderSize = 0;
             this.bttn_Cliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;

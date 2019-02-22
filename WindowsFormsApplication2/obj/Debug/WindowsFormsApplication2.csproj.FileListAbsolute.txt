@@ -19,3 +19,12 @@ C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\
 C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
 C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
 C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache

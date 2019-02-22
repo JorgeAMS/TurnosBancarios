@@ -43,32 +43,32 @@ namespace WindowsFormsApplication2
 
         private void bttn_Cliente_MouseMove(object sender, MouseEventArgs e)
         {
-            bttn_Cliente.Visible = false;
+            bttn_Cliente.Image = ((System.Drawing.Image)(Properties.Resources.ClienteC));
         }
 
         private void bttn_Cliente_MouseLeave(object sender, EventArgs e)
         {
-            bttn_Cliente.Visible = true;
+            bttn_Cliente.Image = ((System.Drawing.Image)(Properties.Resources.Cliente5));
         }
 
         private void bttn_NoCliente_MouseMove(object sender, MouseEventArgs e)
         {
-            bttn_NoCliente.BackgroundImage = Image.FromFile(@"Assets/NoClienteC.png");
+            bttn_NoCliente.Image = ((System.Drawing.Image)(Properties.Resources.NoClienteC));
         }
 
         private void bttn_NoCliente_MouseLeave(object sender, EventArgs e)
         {
-            bttn_NoCliente.BackgroundImage = Image.FromFile(@"Assets/NoCliente.png");
+            bttn_NoCliente.Image = ((System.Drawing.Image)(Properties.Resources.NoCliente));
         }
 
         private void bttn_Preferencial_MouseMove(object sender, MouseEventArgs e)
         {
-
+            bttn_Preferencial.Image = ((System.Drawing.Image)(Properties.Resources.Prioritaria5C));
         }
 
         private void bttn_Preferencial_MouseLeave(object sender, EventArgs e)
         {
-
+            bttn_Preferencial.Image = ((System.Drawing.Image)(Properties.Resources.Prioritaria5));
         }
     }
 }
