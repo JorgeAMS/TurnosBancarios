@@ -35,8 +35,10 @@
             // 
             // button1
             // 
-            this.button1.Enabled = false;
+            this.button1.CausesValidation = false;
             this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(2, 0);
@@ -47,10 +49,13 @@
             // 
             // button2
             // 
+            this.button2.CausesValidation = false;
             this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(295, 0);
+            this.button2.Location = new System.Drawing.Point(297, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(183, 106);
             this.button2.TabIndex = 1;
