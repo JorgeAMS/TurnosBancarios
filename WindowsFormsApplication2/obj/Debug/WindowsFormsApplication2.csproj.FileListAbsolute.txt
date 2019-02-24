@@ -40,3 +40,8 @@ D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsA
 D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.CoreCompileInputs.cache
 D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
 D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\bin\Debug\EntityFramework.dll
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\bin\Debug\EntityFramework.SqlServer.dll
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\bin\Debug\EntityFramework.xml
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\bin\Debug\EntityFramework.SqlServer.xml
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.CopyComplete

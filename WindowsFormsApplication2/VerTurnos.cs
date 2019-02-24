@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApplication2.Model;
 
 namespace WindowsFormsApplication2
 {
@@ -28,7 +29,7 @@ namespace WindowsFormsApplication2
             int separadorX = (int)(WD * 0.02);
             int separadorY = (int)(HG * 0.02);
 
-            int tamanoLetra = (int)((WD * HG)/34000);
+            int tamanoLetra = (int)((WD * HG) / 34000);
 
             bttn_Turno.Width = TurnoWD;
             bttn_Turno.Height = TurnoHG;
@@ -62,13 +63,13 @@ namespace WindowsFormsApplication2
             bttn_M6.Width = ModuloWD;
             bttn_M6.Height = ModuloHG;
 
-            int TurnoX = WD-TurnoWD-ModuloWD-separadorX-separadorX;
+            int TurnoX = WD - TurnoWD - ModuloWD - separadorX - separadorX;
             int TurnoY = (int)(separadorY);
             int ModuloX = WD - ModuloWD - separadorX;
             int ModuloY = (int)(separadorY);
 
-            bttn_Turno.Location = new Point(TurnoX,TurnoY);
-            bttn_Modulo.Location = new Point(ModuloX,ModuloY);
+            bttn_Turno.Location = new Point(TurnoX, TurnoY);
+            bttn_Modulo.Location = new Point(ModuloX, ModuloY);
 
             bttn_T1.Location = new Point(TurnoX, TurnoY + bttn_Turno.Height + bttn_Turno.Location.Y);
             bttn_T2.Location = new Point(TurnoX, TurnoY + bttn_Turno.Height + bttn_T1.Location.Y);
@@ -84,8 +85,8 @@ namespace WindowsFormsApplication2
             bttn_M5.Location = new Point(ModuloX, ModuloY + bttn_Modulo.Height + bttn_M4.Location.Y);
             bttn_M6.Location = new Point(ModuloX, ModuloY + bttn_Modulo.Height + bttn_M5.Location.Y);
 
-            bttn_Turno.Font = new Font(bttn_Turno.Font.FontFamily, tamanoLetra+1, FontStyle.Bold);
-            bttn_Modulo.Font = new Font(bttn_Turno.Font.FontFamily, tamanoLetra+1, FontStyle.Bold);
+            bttn_Turno.Font = new Font(bttn_Turno.Font.FontFamily, tamanoLetra + 1, FontStyle.Bold);
+            bttn_Modulo.Font = new Font(bttn_Turno.Font.FontFamily, tamanoLetra + 1, FontStyle.Bold);
 
             bttn_T1.Font = new Font(bttn_Turno.Font.FontFamily, tamanoLetra);
             bttn_T2.Font = new Font(bttn_Turno.Font.FontFamily, tamanoLetra);
@@ -120,7 +121,19 @@ namespace WindowsFormsApplication2
             int PictureBoxHG = (int)(HG * 0.85);
             pictureBox1.Width = PictureBoxWD;
             pictureBox1.Height = PictureBoxHG;
-            pictureBox1.Location = new Point(0+(int)(WD*0.02), 0 + (int)(HG * 0.035));
+            pictureBox1.Location = new Point(0 + (int)(WD * 0.02), 0 + (int)(HG * 0.035));
+            Texts.Add(bttn_T1);
+            Texts.Add(bttn_T2);
+            Texts.Add(bttn_T3);
+            Texts.Add(bttn_T4);
+            Texts.Add(bttn_T5);
+            Texts.Add(bttn_T6);
+            Modules.Add(bttn_M1);
+            Modules.Add(bttn_M2);
+            Modules.Add(bttn_M3);
+            Modules.Add(bttn_M4);
+            Modules.Add(bttn_M5);
+            Modules.Add(bttn_M6);
         }
 
         /*private void VerTurnos_Activated(object sender, EventArgs e)
@@ -163,17 +176,31 @@ namespace WindowsFormsApplication2
             Thread.Sleep(2000);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            bttn_T1.Visible = true;
-            bttn_M1.Visible = true;
-            bttn_T1.Text = "B114";
-            bttn_M1.Text = "3";
-        }
-
         private void VerTurnos_FormClosing(object sender, FormClosingEventArgs e)
         {
             running = 3;
+        }
+        
+        List<Button> Texts = new List<Button>();
+        List<Button> Modules = new List<Button>();        
+        public void UpdateScreen()
+        {
+            using (BankTEntities db = new BankTEntities())
+            {
+                List<Turno> Turns = new List<Turno>();
+                var getTurns = db.Turnoes.Where(x => x.Estado == "Atencion").OrderByDescending(x => x.ID);
+                foreach (var t in getTurns)
+                {                    
+                    Turns.Add(t);                    
+                }                
+                for(int i = 0; i<Turns.Count && i<6; i++)
+                {
+                    Texts.ElementAt(i).Text = Turns.ElementAt(i).Tipo+Turns.ElementAt(i).Numero;
+                    Texts.ElementAt(i).Visible = true;
+                    Modules.ElementAt(i).Text = Turns.ElementAt(i).Modulo;
+                    Modules.ElementAt(i).Visible = true;
+                }
+            }
         }
     }
 }

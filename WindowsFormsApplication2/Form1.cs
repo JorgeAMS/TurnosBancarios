@@ -26,7 +26,7 @@ namespace WindowsFormsApplication2
 
         private void bttn_Cliente_Click(object sender, EventArgs e)
         {
-
+            FormM.vt.UpdateScreen();
         }
         private void bttn_NoCliente_Click(object sender, EventArgs e)
         {
@@ -67,6 +67,10 @@ namespace WindowsFormsApplication2
         {
             bttn_Preferencial.Image = ((System.Drawing.Image)(Properties.Resources.Prioritaria5));
         }
-        
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            FormM.vt.Show();
+        }
     }
 }
