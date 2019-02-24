@@ -17,5 +17,6 @@ namespace WindowsFormsApplication2.Model
         public int ID { get; set; }
         public string Texto { get; set; }
         public string Modulo { get; set; }
+        public string Estado { get; set; }
     }
 }

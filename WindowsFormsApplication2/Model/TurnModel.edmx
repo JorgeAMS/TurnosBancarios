@@ -12,6 +12,7 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Texto" Type="varchar" MaxLength="4" Nullable="false" />
           <Property Name="Modulo" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="Estado" Type="varchar" MaxLength="20" Nullable="false" />
         </EntityType>
         <EntityContainer Name="BankTModelStoreContainer">
           <EntitySet Name="Turno" EntityType="Self.Turno" Schema="dbo" store:Type="Tables" />
@@ -28,6 +29,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Texto" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Modulo" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
         <EntityContainer Name="BankTEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Turnoes" EntityType="Self.Turno" />
@@ -44,6 +46,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Texto" ColumnName="Texto" />
                 <ScalarProperty Name="Modulo" ColumnName="Modulo" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
