@@ -10,8 +10,10 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Texto" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="Tipo" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="Numero" Type="varchar" MaxLength="2" Nullable="false" />
           <Property Name="Modulo" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="IDCliente" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="Estado" Type="varchar" MaxLength="20" Nullable="false" />
         </EntityType>
         <EntityContainer Name="BankTModelStoreContainer">
@@ -27,8 +29,10 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Texto" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Tipo" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Numero" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Modulo" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IDCliente" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
         <EntityContainer Name="BankTEntities" annotation:LazyLoadingEnabled="true">
@@ -44,8 +48,10 @@
             <EntityTypeMapping TypeName="BankTModel.Turno">
               <MappingFragment StoreEntitySet="Turno">
                 <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Texto" ColumnName="Texto" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Numero" ColumnName="Numero" />
                 <ScalarProperty Name="Modulo" ColumnName="Modulo" />
+                <ScalarProperty Name="IDCliente" ColumnName="IDCliente" />
                 <ScalarProperty Name="Estado" ColumnName="Estado" />
               </MappingFragment>
             </EntityTypeMapping>

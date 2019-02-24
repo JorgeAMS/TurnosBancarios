@@ -15,8 +15,10 @@ namespace WindowsFormsApplication2.Model
     public partial class Turno
     {
         public int ID { get; set; }
-        public string Texto { get; set; }
+        public string Tipo { get; set; }
+        public string Numero { get; set; }
         public string Modulo { get; set; }
+        public string IDCliente { get; set; }
         public string Estado { get; set; }
     }
 }
