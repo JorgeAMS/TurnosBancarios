@@ -29,3 +29,14 @@ C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\Wi
 C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
 C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.VerTurnos.resources
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojAssemblyReference.cache
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.VerTurnos.resources
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.cache
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.CoreCompileInputs.cache
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
