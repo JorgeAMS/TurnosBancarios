@@ -102,10 +102,11 @@
     <Content Include="Assets\NoClienteC.png" />
     <Content Include="Assets\Prioritaria5.png" />
     <Content Include="Assets\Prioritaria5C.png" />
+    <None Include="Resources\img3.jpg" />
+    <None Include="Resources\img2.jpg" />
+    <None Include="Resources\img1.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

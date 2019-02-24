@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,6 +13,7 @@ namespace WindowsFormsApplication2
 {
     public partial class VerTurnos : Form
     {
+        public int running = 1;
         public VerTurnos()
         {
             InitializeComponent();
@@ -112,7 +114,66 @@ namespace WindowsFormsApplication2
             bttn_M4.Visible = false;
             bttn_M5.Visible = false;
             bttn_M6.Visible = false;
+
+
+            int PictureBoxWD = (int)(WD * 0.58);
+            int PictureBoxHG = (int)(HG * 0.85);
+            pictureBox1.Width = PictureBoxWD;
+            pictureBox1.Height = PictureBoxHG;
+            pictureBox1.Location = new Point(0+(int)(WD*0.02), 0 + (int)(HG * 0.035));
         }
-        
+
+        /*private void VerTurnos_Activated(object sender, EventArgs e)
+        {
+        }*/
+        private void VerTurnos_Load(object sender, EventArgs e)
+        {
+            ThreadStart JM = new ThreadStart(imagenesCambiantes);
+            Thread hilo = new Thread(JM);
+            hilo.Start();
+            if (running != 1)
+            {
+                hilo.Interrupt();
+            }
+        }
+
+        private void imagenesCambiantes()
+        {
+            while (running == 1)
+            {
+                CambiarImagen1();
+                CambiarImagen2();
+                CambiarImagen3();
+            }
+        }
+
+        private void CambiarImagen1()
+        {
+            pictureBox1.Image = ((System.Drawing.Image)(Properties.Resources.img1));
+            Thread.Sleep(2000);
+        }
+        private void CambiarImagen2()
+        {
+            pictureBox1.Image = ((System.Drawing.Image)(Properties.Resources.img2));
+            Thread.Sleep(2000);
+        }
+        private void CambiarImagen3()
+        {
+            pictureBox1.Image = ((System.Drawing.Image)(Properties.Resources.img3));
+            Thread.Sleep(2000);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            bttn_T1.Visible = true;
+            bttn_M1.Visible = true;
+            bttn_T1.Text = "B114";
+            bttn_M1.Text = "3";
+        }
+
+        private void VerTurnos_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            running = 3;
+        }
     }
 }
