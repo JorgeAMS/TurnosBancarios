@@ -45,3 +45,8 @@ D:\Programacion\TurnosBancarios\WindowsFormsApplication2\bin\Debug\EntityFramewo
 D:\Programacion\TurnosBancarios\WindowsFormsApplication2\bin\Debug\EntityFramework.xml
 D:\Programacion\TurnosBancarios\WindowsFormsApplication2\bin\Debug\EntityFramework.SqlServer.xml
 D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.CopyComplete
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\bin\Debug\EntityFramework.dll
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\bin\Debug\EntityFramework.xml
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.CajaAsesor.resources

@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CajaAsesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CajaAsesor.Designer.cs">
+      <DependentUpon>CajaAsesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     <Compile Include="VerTurnos.Designer.cs">
       <DependentUpon>VerTurnos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CajaAsesor.resx">
+      <DependentUpon>CajaAsesor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

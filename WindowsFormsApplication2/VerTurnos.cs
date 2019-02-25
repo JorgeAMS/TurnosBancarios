@@ -141,6 +141,7 @@ namespace WindowsFormsApplication2
         }*/
         private void VerTurnos_Load(object sender, EventArgs e)
         {
+            UpdateScreen();
             ThreadStart JM = new ThreadStart(imagenesCambiantes);
             Thread hilo = new Thread(JM);
             hilo.Start();

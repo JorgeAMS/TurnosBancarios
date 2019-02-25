@@ -28,29 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.bttn_Cliente = new System.Windows.Forms.Button();
             this.bttn_NoCliente = new System.Windows.Forms.Button();
+            this.bttn_Cliente = new System.Windows.Forms.Button();
             this.bttn_Preferencial = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
-            // 
-            // bttn_Cliente
-            // 
-            this.bttn_Cliente.BackColor = System.Drawing.Color.Transparent;
-            this.bttn_Cliente.BackgroundImage = global::WindowsFormsApplication2.Properties.Resources.Cliente5;
-            this.bttn_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.bttn_Cliente.FlatAppearance.BorderSize = 0;
-            this.bttn_Cliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.bttn_Cliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.bttn_Cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttn_Cliente.Location = new System.Drawing.Point(530, 0);
-            this.bttn_Cliente.Name = "bttn_Cliente";
-            this.bttn_Cliente.Size = new System.Drawing.Size(243, 500);
-            this.bttn_Cliente.TabIndex = 0;
-            this.bttn_Cliente.UseVisualStyleBackColor = false;
-            this.bttn_Cliente.Click += new System.EventHandler(this.bttn_Cliente_Click);
-            this.bttn_Cliente.MouseLeave += new System.EventHandler(this.bttn_Cliente_MouseLeave);
-            this.bttn_Cliente.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bttn_Cliente_MouseMove);
             // 
             // bttn_NoCliente
             // 
@@ -69,6 +54,24 @@
             this.bttn_NoCliente.Click += new System.EventHandler(this.bttn_NoCliente_Click);
             this.bttn_NoCliente.MouseLeave += new System.EventHandler(this.bttn_NoCliente_MouseLeave);
             this.bttn_NoCliente.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bttn_NoCliente_MouseMove);
+            // 
+            // bttn_Cliente
+            // 
+            this.bttn_Cliente.BackColor = System.Drawing.Color.Transparent;
+            this.bttn_Cliente.BackgroundImage = global::WindowsFormsApplication2.Properties.Resources.Cliente5;
+            this.bttn_Cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bttn_Cliente.FlatAppearance.BorderSize = 0;
+            this.bttn_Cliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.bttn_Cliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.bttn_Cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttn_Cliente.Location = new System.Drawing.Point(530, 0);
+            this.bttn_Cliente.Name = "bttn_Cliente";
+            this.bttn_Cliente.Size = new System.Drawing.Size(243, 500);
+            this.bttn_Cliente.TabIndex = 0;
+            this.bttn_Cliente.UseVisualStyleBackColor = false;
+            this.bttn_Cliente.Click += new System.EventHandler(this.bttn_Cliente_Click);
+            this.bttn_Cliente.MouseLeave += new System.EventHandler(this.bttn_Cliente_MouseLeave);
+            this.bttn_Cliente.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bttn_Cliente_MouseMove);
             // 
             // bttn_Preferencial
             // 
@@ -89,13 +92,29 @@
             this.bttn_Preferencial.MouseLeave += new System.EventHandler(this.bttn_Preferencial_MouseLeave);
             this.bttn_Preferencial.MouseMove += new System.Windows.Forms.MouseEventHandler(this.bttn_Preferencial_MouseMove);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(852, 310);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 24);
+            this.label1.TabIndex = 3;
+            this.label1.Visible = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 5000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1161, 643);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.bttn_NoCliente);
             this.Controls.Add(this.bttn_Cliente);
             this.Controls.Add(this.bttn_Preferencial);
@@ -107,6 +126,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -115,6 +135,8 @@
         private System.Windows.Forms.Button bttn_Cliente;
         private System.Windows.Forms.Button bttn_NoCliente;
         private System.Windows.Forms.Button bttn_Preferencial;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
