@@ -51,3 +51,4 @@ C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\Wi
 C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Jorge M\Documents\Visual Studio 2015\Projects\Turnos\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.CajaAsesor.resources
 D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.CajaAsesor.resources
+D:\Programacion\TurnosBancarios\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Modulo1.resources

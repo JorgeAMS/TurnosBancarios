@@ -20,5 +20,6 @@ namespace WindowsFormsApplication2.Model
         public string Modulo { get; set; }
         public string IDCliente { get; set; }
         public string Estado { get; set; }
+        public Nullable<System.DateTime> FechaAt { get; set; }
     }
 }

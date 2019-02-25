@@ -189,7 +189,7 @@ namespace WindowsFormsApplication2
             using (BankTEntities db = new BankTEntities())
             {
                 List<Turno> Turns = new List<Turno>();
-                var getTurns = db.Turnoes.Where(x => x.Estado == "Atencion").OrderByDescending(x => x.ID);
+                var getTurns = db.Turnoes.Where(x => x.Estado == "Atencion").OrderByDescending(x => x.FechaAt);
                 foreach (var t in getTurns)
                 {                    
                     Turns.Add(t);                    
@@ -201,7 +201,36 @@ namespace WindowsFormsApplication2
                     Modules.ElementAt(i).Text = Turns.ElementAt(i).Modulo;
                     Modules.ElementAt(i).Visible = true;
                 }
+            }           
+        }
+        public void UpdateScreenAfter()
+        {
+            using (BankTEntities db = new BankTEntities())
+            {
+                List<Turno> Turns = new List<Turno>();
+                var getTurns = db.Turnoes.Where(x => x.Estado == "Atencion").OrderByDescending(x => x.FechaAt);
+                foreach (var t in getTurns)
+                {
+                    Turns.Add(t);
+                }
+                for (int i = 0; i < Turns.Count && i < 6; i++)
+                {
+                    Texts.ElementAt(i).Text = Turns.ElementAt(i).Tipo + Turns.ElementAt(i).Numero;
+                    Texts.ElementAt(i).Visible = true;
+                    Modules.ElementAt(i).Text = Turns.ElementAt(i).Modulo;
+                    Modules.ElementAt(i).Visible = true;
+                }
             }
+            bttn_M1.ForeColor = Color.Red;
+            bttn_T1.ForeColor = Color.Red;
+            timer1.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            bttn_M1.ForeColor = Color.Black;
+            bttn_T1.ForeColor = Color.Black;
+            timer1.Enabled = false;
         }
     }
 }

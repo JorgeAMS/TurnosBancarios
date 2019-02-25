@@ -103,6 +103,7 @@ namespace WindowsFormsApplication2
         private void CajaAsesor_Load(object sender, EventArgs e)
         {
             FormM.vt.Show();
+            FormM.mc.Show();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

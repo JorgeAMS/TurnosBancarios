@@ -15,6 +15,7 @@
           <Property Name="Modulo" Type="varchar" MaxLength="2" Nullable="false" />
           <Property Name="IDCliente" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="Estado" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="FechaAt" Type="datetime" />
         </EntityType>
         <EntityContainer Name="BankTModelStoreContainer">
           <EntitySet Name="Turno" EntityType="Self.Turno" Schema="dbo" store:Type="Tables" />
@@ -34,6 +35,7 @@
           <Property Name="Modulo" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="IDCliente" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FechaAt" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityContainer Name="BankTEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Turnoes" EntityType="Self.Turno" />
@@ -53,6 +55,7 @@
                 <ScalarProperty Name="Modulo" ColumnName="Modulo" />
                 <ScalarProperty Name="IDCliente" ColumnName="IDCliente" />
                 <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="FechaAt" ColumnName="FechaAt" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

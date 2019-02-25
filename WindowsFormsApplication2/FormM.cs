@@ -9,5 +9,6 @@ namespace WindowsFormsApplication2
     class FormM
     {
         public static VerTurnos vt = new VerTurnos();
+        public static Modulo1 mc = new Modulo1();
     }
 }
