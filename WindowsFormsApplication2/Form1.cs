@@ -14,7 +14,8 @@ namespace WindowsFormsApplication2
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        private string Cedula;
+        public Form1(string Ced)
         {
             InitializeComponent();
             int hg = Screen.PrimaryScreen.Bounds.Height;
@@ -24,7 +25,9 @@ namespace WindowsFormsApplication2
             bttn_NoCliente.Location = new Point(((wd/2)-387),((hg/2)-247));
             bttn_Preferencial.Location = new Point(((wd/2)-387),((hg/2)+15));
             label1.Location = new Point(wd/2,hg/2);
+            Cedula = Ced;
         }
+
         private void FinRes(Turno t)
         {
             label1.Text = "Su turno es: " + t.Tipo + t.Numero;
@@ -52,7 +55,7 @@ namespace WindowsFormsApplication2
                     }
                     Turn.Tipo = "C";
                     Turn.Modulo = "0";
-                    Turn.IDCliente = "666";
+                    Turn.IDCliente = Cedula;
                     Turn.Estado = "En Espera";
                 }
                 catch
@@ -60,7 +63,7 @@ namespace WindowsFormsApplication2
                     Turn.Numero = "1";
                     Turn.Tipo = "C";
                     Turn.Modulo = "0";
-                    Turn.IDCliente = "666";
+                    Turn.IDCliente = Cedula;
                     Turn.Estado = "En Espera";
                 }
                 var TurnCreation = db.Set<Turno>();
@@ -87,7 +90,7 @@ namespace WindowsFormsApplication2
                     }
                     Turn.Tipo = "U";
                     Turn.Modulo = "0";
-                    Turn.IDCliente = "666";
+                    Turn.IDCliente = Cedula;
                     Turn.Estado = "En Espera";
                 }
                 catch
@@ -95,7 +98,7 @@ namespace WindowsFormsApplication2
                     Turn.Numero = "1";
                     Turn.Tipo = "U";
                     Turn.Modulo = "0";
-                    Turn.IDCliente = "666";
+                    Turn.IDCliente = Cedula;
                     Turn.Estado = "En Espera";
                 }
                 var TurnCreation = db.Set<Turno>();
@@ -123,7 +126,7 @@ namespace WindowsFormsApplication2
                     }
                     Turn.Tipo = "P";
                     Turn.Modulo = "0";
-                    Turn.IDCliente = "666";
+                    Turn.IDCliente = Cedula;
                     Turn.Estado = "En Espera";
                 }
                 catch
@@ -131,7 +134,7 @@ namespace WindowsFormsApplication2
                     Turn.Numero = "1";
                     Turn.Tipo = "P";
                     Turn.Modulo = "0";
-                    Turn.IDCliente = "666";
+                    Turn.IDCliente = Cedula;
                     Turn.Estado = "En Espera";
                 }
                 var TurnCreation = db.Set<Turno>();
@@ -173,13 +176,13 @@ namespace WindowsFormsApplication2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            FormM.vt.Show();
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            Form1 f1 = new Form1();
-            f1.Show();
+            CajaAsesor CA = new CajaAsesor();
+            CA.Show();
             timer1.Enabled = false;
             Dispose(false);
         }

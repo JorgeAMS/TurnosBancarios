@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CajaAsesor));
             this.bttn_Caja = new System.Windows.Forms.Button();
             this.bttn_Asesor = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.ErrorText = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // bttn_Caja
@@ -95,11 +98,27 @@
             this.ErrorText.AutoSize = true;
             this.ErrorText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ErrorText.ForeColor = System.Drawing.Color.Red;
-            this.ErrorText.Location = new System.Drawing.Point(237, 233);
+            this.ErrorText.Location = new System.Drawing.Point(182, 241);
             this.ErrorText.Name = "ErrorText";
             this.ErrorText.Size = new System.Drawing.Size(424, 22);
             this.ErrorText.TabIndex = 4;
             this.ErrorText.Text = "ⓘ  Ingrese su documento de identificación por favor.";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(418, 241);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 24);
+            this.label1.TabIndex = 5;
+            this.label1.Visible = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 5000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // CajaAsesor
             // 
@@ -107,6 +126,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(840, 494);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ErrorText);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
@@ -115,6 +135,7 @@
             this.Name = "CajaAsesor";
             this.Text = "CajaAsesor";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.CajaAsesor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -127,5 +148,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label ErrorText;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
