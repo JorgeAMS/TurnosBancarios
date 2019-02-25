@@ -37,6 +37,7 @@ namespace WindowsFormsApplication2
             if (textBox1.Text != "")
             {
                 ErrorText.Visible = false;
+                textBox1.Text = "";
 
             }
             else
@@ -50,6 +51,7 @@ namespace WindowsFormsApplication2
             if (textBox1.Text != "")
             {
                 ErrorText.Visible = false;
+                textBox1.Text = "";
                 Form1 JM = new Form1();
                 JM.Show();
                 
