@@ -76,6 +76,25 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormM.cs" />
+    <Compile Include="Model\TurnModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TurnModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TurnModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TurnModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TurnModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TurnModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Turno.cs">
+      <DependentUpon>TurnModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Modulo1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +125,13 @@
     <EmbeddedResource Include="VerTurnos.resx">
       <DependentUpon>VerTurnos.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="Model\TurnModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TurnModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\TurnModel.edmx.diagram">
+      <DependentUpon>TurnModel.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -127,6 +153,16 @@
     <Content Include="Assets\NoClienteC.png" />
     <Content Include="Assets\Prioritaria5.png" />
     <Content Include="Assets\Prioritaria5C.png" />
+    <Content Include="Model\TurnModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TurnModel.edmx</DependentUpon>
+      <LastGenOutput>TurnModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\TurnModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TurnModel.edmx</DependentUpon>
+      <LastGenOutput>TurnModel.cs</LastGenOutput>
+    </Content>
     <None Include="Resources\img3.jpg" />
     <None Include="Resources\img2.jpg" />
     <None Include="Resources\img1.jpg" />
@@ -146,9 +182,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
